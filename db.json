@@ -4,21 +4,65 @@
   "description": "Teste os seus conhecimentos sobre a série The Office e descubra se você está apto a receber o prêmio \"The Dundies\"",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
+      "image": "https://media.giphy.com/media/dXf93EHY6advUBYC0u/giphy-downsized.gif",
+      "title": "Dwight tem uma fazenda de:",
+      "description": "",
       "answer": 2,
-      "alternatives": [".elemento", "*elemento", "#elemento", "%elemento"]
+      "alternatives": ["Laranjas", "Morangos", "Beterrabas", "Maçãs"]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "image": "https://media.giphy.com/media/55SfA4BxofRBe/giphy.gif",
+      "title": "O que a Dunder Mifflin vende?",
+      "description": "",
       "answer": 0,
+      "alternatives": ["Papel", "Adesivos", "Computador", "Envelopes"]
+    },
+    {
+      "image": "https://media.giphy.com/media/YxB29TV3CowSvVKjMp/giphy.gif",
+      "title": "Qual profissão a recepicionista Pam, sonha em ser?",
+      "description": "",
+      "answer": 0,
+      "alternatives": ["Artista", "Dentista", "Professora", "Advogada"]
+    },
+    {
+      "image": "https://media.giphy.com/media/Te5PMi6Lhug48/giphy.gif",
+      "title": "No primeiro episódio de \"The Office\", quais são os objetos que Jim Halpert coloca em gelatina?",
+      "description": "",
+      "answer": 1,
       "alternatives": [
-        "background: linear-gradient(#e66465, #9198e5);",
-        "background: gradient(#e66465, #9198e5);"
+        "A bolsa do Ryan e o vaso de flores da Pam",
+        "O grampeador do Dwight e a caneca do Michael",
+        "A faixa de Karatê do Dwight e a caneta do Michael",
+        "A caneta do Dwight e a caneca do Michael"
       ]
+    },
+    {
+      "image": "https://media.giphy.com/media/KhliiAkDFP9YY/giphy-downsized.gif",
+      "title": "Na filial em que Michael Scott trabalha, tem uma pessoa que Michael não suporta. Quem é essa pessoa?",
+      "description": "",
+      "answer": 3,
+      "alternatives": ["Stanley", "Jim", "Dwight", "Toby"]
+    },
+    {
+      "image": "https://media.giphy.com/media/tFDYpmGDnbmZBw8cO2/giphy-downsized.gif",
+      "title": "Quem era o noivo da Pam na primeira temporada da série?",
+      "description": "",
+      "answer": 1,
+      "alternatives": ["Michael", "Roy", "Jim", "Ryan"]
+    },
+    {
+      "image": "https://media.giphy.com/media/E2Twyi9GYrNIFxCMrT/giphy-downsized.gif",
+      "title": "Antes de Andy ir para a filial de Scranthon, ele era da filial de:",
+      "description": "",
+      "answer": 3,
+      "alternatives": ["Miami", "Chicago", "Las Vegas", "Stanford"]
+    },
+    {
+      "image": "https://media.giphy.com/media/jOpLbiGmHR9S0/giphy.gif",
+      "title": "Que parte de seu corpo Michael queima em uma churrasqueira George Foreman?",
+      "description": "",
+      "answer": 2,
+      "alternatives": ["Mão", "Língua", "Pé", "Cabelo"]
     }
   ],
   "external": [""],
