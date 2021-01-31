@@ -1,13 +1,17 @@
 import React from "react";
 import { useRouter } from "next/router";
-import db from "../db.json";
-import Widget from "../src/components/Widget";
-import QuizLogo from "../src/components/QuizLogo";
-import QuizBackground from "../src/components/QuizBackground";
-import QuizContainer from "../src/components/QuizContainer";
-import Button from "../src/components/Button";
-import AlternativesForm from "../src/components/AlternativesForm";
-import Loader from "../src/components/Loader";
+import { Lottie } from '@crello/react-lottie';
+// import db from "../../db.json";
+import Widget from "../../components/Widget";
+import QuizLogo from "../../components/QuizLogo";
+import QuizBackground from "../../components/QuizBackground";
+import QuizContainer from "../../components/QuizContainer";
+import Button from "../../components/Button";
+import AlternativesForm from "../../components/AlternativesForm";
+// import Loader from "../../components/Loader";
+import BackLinkArrow from "../../components/BackLinkArrow";
+
+import loadingAnimation from './animations/loading.json';
 
 function ResultWidget({ results }) {
   const router = useRouter();
@@ -57,8 +61,13 @@ function LoadingWidget() {
   return (
     <Widget>
       <Widget.Header>Carregando...</Widget.Header>
-      <Widget.Content>
-        <Loader />
+      <Widget.Content style={{ display: 'flex', justifyContent: 'center' }}>
+        <Lottie
+          width="200px"
+          height="200px"
+          className="lottie-container basic"
+          config={{ animationData: loadingAnimation, loop: true, autoplay: true }}
+        />
       </Widget.Content>
     </Widget>
   );
@@ -82,6 +91,7 @@ function QuestionWidget({
   return (
     <Widget>
       <Widget.Header>
+        <BackLinkArrow href="/" />
         <h3>{`Pergunta ${questionIndex + 1} de ${totalQuestions}`}</h3>
       </Widget.Header>
 
@@ -151,13 +161,13 @@ const screenStates = {
   LOADING: "LOADING",
   RESULT: "RESULT",
 };
-export default function QuizPage() {
+export default function QuizPage({ externalQuestions, externalBg }) {
   const [screenState, setScreenState] = React.useState(screenStates.LOADING);
   const [results, setResults] = React.useState([]);
-  const totalQuestions = db.questions.length;
   const [currentQuestion, setCurrentQuestion] = React.useState(0);
   const questionIndex = currentQuestion;
-  const question = db.questions[questionIndex];
+  const question = externalQuestions[questionIndex];
+  const totalQuestions = externalQuestions.length;
 
   function addResult(result) {
     setResults([...results, result]);
@@ -185,7 +195,7 @@ export default function QuizPage() {
   }
 
   return (
-    <QuizBackground backgroundImage={db.bg}>
+    <QuizBackground backgroundImage={externalBg}>
       <QuizContainer>
         <QuizLogo />
         {screenState === screenStates.QUIZ && (
