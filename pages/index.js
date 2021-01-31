@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Router, useRouter } from "next/router";
+import { useRouter } from "next/router";
 import db from "../db.json";
 import Widget from "../src/components/Widget";
 import QuizLogo from "../src/components/QuizLogo";

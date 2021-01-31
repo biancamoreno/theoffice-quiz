@@ -21,8 +21,8 @@
       "image": "https://media.giphy.com/media/YxB29TV3CowSvVKjMp/giphy.gif",
       "title": "Qual profissão a recepicionista Pam, sonha em ser?",
       "description": "",
-      "answer": 0,
-      "alternatives": ["Artista", "Dentista", "Professora", "Advogada"]
+      "answer": 2,
+      "alternatives": ["Dentista", "Professora", "Artista", "Advogada"]
     },
     {
       "image": "https://media.giphy.com/media/Te5PMi6Lhug48/giphy.gif",
